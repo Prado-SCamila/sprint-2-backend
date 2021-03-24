@@ -62,28 +62,28 @@ namespace senai_WebApi.Repositories
                 SqlDataReader rdr;
 
                 //Estou criando um comando passando a instrução e o obj de conexão como parametros.
-                using (SqlCommand cmd) = new SqlCommand(querySelectAll, con)
+                using (SqlCommand cmd = new SqlCommand(querySelectAll, con))
                 {
 
                     //executa a query e armazena os dados no rdr( mando o leitor rdr executar o comando cmd)
                     rdr = cmd.ExecuteReader();
 
-                //enquanto houver registros para serem lidos no rdr, o laço se repete
-                while (rdr.Read())
-                {
-                    //instancio um objeto do generodomain(classe)
-                    GeneroDomain genero = new GeneroDomain()
+                    //enquanto houver registros para serem lidos no rdr, o laço se repete
+                    while (rdr.Read())
                     {
-                        //converte um objeto em um numero inteiro e armazeno no id Genero
-                        //atrivui a propriedade idgenero o valor da primeira coluna do bd
-                        idGenero = Convert.ToInt32(rdr[0]),
-                        //atribui à propriedade nome o valor da segunda coluna da tabela do bd
-                        nome = rdr[1].ToString();
-                    };
-                listaGeneros.Add(genero);
-            } 
-          
-        }
+                        //instancio um objeto do generodomain(classe)
+                        GeneroDomain genero = new GeneroDomain()
+                        {
+                            //converte um objeto em um numero inteiro e armazeno no id Genero
+                            //atrivui a propriedade idgenero o valor da primeira coluna do bd
+                            idGenero = Convert.ToInt32(rdr[0]),
+                            //atribui à propriedade nome o valor da segunda coluna da tabela do bd
+                            nome = rdr[1].ToString()
+                        };
+                        listaGeneros.Add(genero);
+                    }
+
+                }
     }
           return listaGeneros;
 
