@@ -1,0 +1,6 @@
+C:\Users\prado\OneDrive\Área de Trabalho\Sprint2_WebApi\sprint-2-backend\senai_WebApi\senai_WebApi\obj\Debug\net5.0\senai_WebApi.csprojAssemblyReference.cache
+C:\Users\prado\OneDrive\Área de Trabalho\Sprint2_WebApi\sprint-2-backend\senai_WebApi\senai_WebApi\obj\Debug\net5.0\senai_WebApi.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\prado\OneDrive\Área de Trabalho\Sprint2_WebApi\sprint-2-backend\senai_WebApi\senai_WebApi\obj\Debug\net5.0\senai_WebApi.AssemblyInfoInputs.cache
+C:\Users\prado\OneDrive\Área de Trabalho\Sprint2_WebApi\sprint-2-backend\senai_WebApi\senai_WebApi\obj\Debug\net5.0\senai_WebApi.AssemblyInfo.cs
+C:\Users\prado\OneDrive\Área de Trabalho\Sprint2_WebApi\sprint-2-backend\senai_WebApi\senai_WebApi\obj\Debug\net5.0\senai_WebApi.csproj.CoreCompileInputs.cache
+C:\Users\prado\OneDrive\Área de Trabalho\Sprint2_WebApi\sprint-2-backend\senai_WebApi\senai_WebApi\obj\Debug\net5.0\senai_WebApi.MvcApplicationPartsAssemblyInfo.cache
