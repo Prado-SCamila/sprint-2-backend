@@ -21,27 +21,129 @@ namespace senai_WebApi.Repositories
         //private string stringConexao = "Data Source=DESKTOP-840P8H6;initial catalog=Filmes; integrated security=true";
         public void AtualizarIdCorpo(GeneroDomain genero)
         {
-            throw new NotImplementedException();
+            using(SqlConnection con = new SqlConnection(stringConexao))
+            {
+                //Declara a query que vai atribuir valores conforme escrito abaixo ao nome e id - coluna e variavel
+                string queryUpdateIdBody = "UPDATE Generos SET Nome = @Nome WHERE idGenero = @ID";
+
+                using(SqlCommand cmd = new SqlCommand(queryUpdateIdBody, con))
+                {
+                    cmd.Parameters.AddWithValue("@Nome", genero.nome);
+                    cmd.Parameters.AddWithValue("@ID", genero.idGenero);
+                }
+            }
         }
 
         public void AtualizarIdUrl(int id, GeneroDomain genero)
         {
-            throw new NotImplementedException();
+            //Declara a sQL connection con passando a string de conexao como parametro
+            using (SqlConnection con = new SqlConnection(stringConexao))
+            {
+                //Declara a query a ser executada
+                string queryUpdateUrl = "UPDATE Generos SET Nome = @Nome WHERE idGenero = @ID";
+
+                //Declara a sql Command cmd passando a query que será executada e a conexao como parametro
+                using(SqlCommand cmd = new SqlCommand(queryUpdateUrl, con))
+                {
+                    //Passa os valores para os parâmetros
+                    cmd.Parameters.AddWithValue("@ID", id);
+                    cmd.Parameters.AddWithValue("@Nome", genero.nome);
+
+                    //Abre a conexao com o banco de dados
+                    con.Open();
+
+                    //Executa o comando
+                    cmd.ExecuteNonQuery();
+                }
+
+            }
         }
 
+        /// <summary>
+        /// busca o id do genero q sera atualizado
+        /// </summary>
+        /// <returns></returns>
         public GeneroDomain BuscarPorId()
         {
-            throw new NotImplementedException();
+            using (SqlConnection con = new SqlConnection(stringConexao))
+            {
+                string querySelectById = "SELECT idGenero, Nome FROM Generos WHERE idGenero = @ID";
+
+                con.Open();
+
+                //lê os dados do bco e armazena como variavel c#
+                SqlDataReader rdr;
+
+            using (SqlCommand cmd = new SqlCommand(querySelectById, con))
+                {
+                    // cmd.Parameters.AddWithValue("@ID",id);
+                    cmd.Parameters.AddWithValue("@ID",id);
+
+                    //Executa a query e armazena os dados no rdr
+                    rdr = cmd.ExecuteReader();
+
+                    //Verifica se a busca retornou algum resultado( se tinha algo para ler lá)
+                    if (rdr.Read())
+                    {
+                        //se sim, instancia um novo objeto chamado generobuscado do tipo generodomain
+                        GeneroDomain generoBuscado = new GeneroDomain()
+                        {
+                            //atribui à propriedade idGenero o valor da coluna idGenero da tabela do bco de dados
+                            idGenero = Convert.ToInt32(rdr["idGenero"]),
+
+                            //atribui à propriedade Nome o valor da coluna Nome da tabela do bco de dados.
+                            nome = rdr["Nome"].ToString()
+
+                        };
+                        return generoBuscado;
+                    }
+                    return null;
+                }
+            }
         }
+
+    
 
         public void Cadastrar(GeneroDomain novoGenero)
         {
-            throw new NotImplementedException();
+            using(SqlConnection con = new SqlConnection(stringConexao))
+            { 
+                //Declara a query que será inserida
+                string queryInsert = "INSERT INTO Generos(Nome) VALUES(@Nome)";
+                //VALUES(@Nome) para inserir nome com apostrofe
+
+                //passo a query que será executada e a conexão
+                using (SqlCommand cmd = new SqlCommand(queryInsert, con))
+                {
+                    cmd.Parameters.AddWithValue("@Nome", novoGenero.nome);
+                }
+            }
         }
 
+        /// <summary>
+        /// Deleta um genero através do seu id
+        /// </summary>
+        /// <param name="id">id do genero que será deletado</param>
         public void Deletar(int id)
         {
-            throw new NotImplementedException();
+            //Declara a sqlConection con passando a string de conex~~ao como parametro
+            using (SqlConnection con = new SqlConnection(stringConexao))
+            {
+                //Declara a query passando o id como parametro
+                string queryDelete = "DELETE FROM Generos Where idGenero = @ID";
+
+                using (SqlCommand cmd = new SqlCommand(queryDelete, con))
+                {
+                    //Atribui o valor recebido do id como o parametro @ID
+                    cmd.Parameters.AddWithValue("@ID", id);
+
+                    //Abre a conexao com o bco de dados
+                    con.Open();
+
+                //executa a query
+                cmd.ExecuteNonQuery();
+                }
+            }
         }
 
         public List<GeneroDomain> ListarTodos()
