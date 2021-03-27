@@ -1,0 +1,6 @@
+C:\Users\prado\OneDrive\Área de Trabalho\SENAI\M_Peoples\Senai_Peoples_WebApi\senai_Peoples_WebApi\senai_Peoples_WebApi\obj\Debug\net5.0\senai_Peoples_WebApi.csprojAssemblyReference.cache
+C:\Users\prado\OneDrive\Área de Trabalho\SENAI\M_Peoples\Senai_Peoples_WebApi\senai_Peoples_WebApi\senai_Peoples_WebApi\obj\Debug\net5.0\senai_Peoples_WebApi.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\prado\OneDrive\Área de Trabalho\SENAI\M_Peoples\Senai_Peoples_WebApi\senai_Peoples_WebApi\senai_Peoples_WebApi\obj\Debug\net5.0\senai_Peoples_WebApi.AssemblyInfoInputs.cache
+C:\Users\prado\OneDrive\Área de Trabalho\SENAI\M_Peoples\Senai_Peoples_WebApi\senai_Peoples_WebApi\senai_Peoples_WebApi\obj\Debug\net5.0\senai_Peoples_WebApi.AssemblyInfo.cs
+C:\Users\prado\OneDrive\Área de Trabalho\SENAI\M_Peoples\Senai_Peoples_WebApi\senai_Peoples_WebApi\senai_Peoples_WebApi\obj\Debug\net5.0\senai_Peoples_WebApi.csproj.CoreCompileInputs.cache
+C:\Users\prado\OneDrive\Área de Trabalho\SENAI\M_Peoples\Senai_Peoples_WebApi\senai_Peoples_WebApi\senai_Peoples_WebApi\obj\Debug\net5.0\senai_Peoples_WebApi.MvcApplicationPartsAssemblyInfo.cache
