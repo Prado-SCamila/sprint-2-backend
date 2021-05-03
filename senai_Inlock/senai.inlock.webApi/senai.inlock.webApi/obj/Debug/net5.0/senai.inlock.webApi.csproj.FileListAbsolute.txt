@@ -1,0 +1,6 @@
+C:\Users\prado\OneDrive\Área de Trabalho\Sprint2_WebApi\sprint-2-backend\senai_Inlock\senai.inlock.webApi\senai.inlock.webApi\obj\Debug\net5.0\senai.inlock.webApi.csprojAssemblyReference.cache
+C:\Users\prado\OneDrive\Área de Trabalho\Sprint2_WebApi\sprint-2-backend\senai_Inlock\senai.inlock.webApi\senai.inlock.webApi\obj\Debug\net5.0\senai.inlock.webApi.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\prado\OneDrive\Área de Trabalho\Sprint2_WebApi\sprint-2-backend\senai_Inlock\senai.inlock.webApi\senai.inlock.webApi\obj\Debug\net5.0\senai.inlock.webApi.AssemblyInfoInputs.cache
+C:\Users\prado\OneDrive\Área de Trabalho\Sprint2_WebApi\sprint-2-backend\senai_Inlock\senai.inlock.webApi\senai.inlock.webApi\obj\Debug\net5.0\senai.inlock.webApi.AssemblyInfo.cs
+C:\Users\prado\OneDrive\Área de Trabalho\Sprint2_WebApi\sprint-2-backend\senai_Inlock\senai.inlock.webApi\senai.inlock.webApi\obj\Debug\net5.0\senai.inlock.webApi.csproj.CoreCompileInputs.cache
+C:\Users\prado\OneDrive\Área de Trabalho\Sprint2_WebApi\sprint-2-backend\senai_Inlock\senai.inlock.webApi\senai.inlock.webApi\obj\Debug\net5.0\senai.inlock.webApi.MvcApplicationPartsAssemblyInfo.cache
